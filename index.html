@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://emojipedia-us.s3.amazonaws.com/source/microsoft-teams/337/purple-heart_1f49c.png"
+      type="image/x-icon"
+    />
+    <title>Truth or Dare</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "SF Pro Display", sans-serif;
+        box-sizing: border-box;
+        overflow-y: hidden;
+      }
+
+      body {
+        height: 100vh;
+        transition: 1s;
+      }
+      .bg-truth {
+        background-image: linear-gradient(45deg, #ff5523, #fe9358);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .bg-dare {
+        background-image: linear-gradient(45deg, #8936ff, #bd3bff);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        margin: 8rem auto 10rem;
+        padding: 4rem 1rem;
+        background-color: #fff;
+        border-radius: 16px;
+        text-align: center;
+        max-width: 400px;
+        /* min-height: 25rem; */
+      }
+      section.content {
+        margin-bottom: 5rem;
+      }
+      section.content h1 {
+        margin-bottom: 1rem;
+      }
+      section.content p {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        color: #5e5e5e;
+      }
+      section.buttons {
+        display: flex;
+        justify-content: space-around;
+      }
+      section.buttons button {
+        padding: 1rem 3rem;
+        border-radius: 16px;
+        border: none;
+        min-width: 30%;
+        font-weight: 700;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      section.buttons button.dare {
+        color: #8936ff;
+      }
+      section.buttons button.truth {
+        color: #ff5523;
+      }
+    </style>
+  </head>
+  <body class="bg-truth">
+    <div class="container">
+      <section class="content">
+        <h1>Choose Truth or Dare</h1>
+        <img src="" width="56px" />
+        <p>The question will be shown</p>
+      </section>
+      <section class="buttons">
+        <button class="dare">Dare</button>
+        <button class="truth">Truth</button>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
